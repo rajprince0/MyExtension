@@ -1,0 +1,144 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Report xmlns:rd="http://schemas.microsoft.com/SQLServer/reporting/reportdesigner" xmlns:cl="http://schemas.microsoft.com/sqlserver/reporting/2010/01/componentdefinition" xmlns="http://schemas.microsoft.com/sqlserver/reporting/2010/01/reportdefinition">
+  <DataSources>
+    <DataSource Name="DataSource">
+      <ConnectionProperties>
+        <DataProvider>SQL</DataProvider>
+        <ConnectString />
+      </ConnectionProperties>
+    </DataSource>
+  </DataSources>
+  <ReportSections>
+    <ReportSection>
+      <Body>
+        <Height>2in</Height>
+        <Style />
+      </Body>
+      <Width>6.5in</Width>
+      <Page>
+        <Style />
+      </Page>
+    </ReportSection>
+  </ReportSections>
+  <Code>Public Function BlankZero(ByVal Value As Decimal)
+    if Value = 0 then
+        Return ""
+    end if
+    Return Value
+End Function
+
+Public Function BlankPos(ByVal Value As Decimal)
+    if Value &gt; 0 then
+        Return ""
+    end if
+    Return Value
+End Function
+
+Public Function BlankZeroAndPos(ByVal Value As Decimal)
+    if Value &gt;= 0 then
+        Return ""
+    end if
+    Return Value
+End Function
+
+Public Function BlankNeg(ByVal Value As Decimal)
+    if Value &lt; 0 then
+        Return ""
+    end if
+    Return Value
+End Function
+
+Public Function BlankNegAndZero(ByVal Value As Decimal)
+    if Value &lt;= 0 then
+        Return ""
+    end if
+    Return Value
+End Function
+</Code>
+  <Language>=User!Language</Language>
+  <ConsumeContainerWhitespace>true</ConsumeContainerWhitespace>
+  <rd:ReportID>0eeb6585-38ae-40f1-885b-8d50088d51b4</rd:ReportID>
+  <rd:ReportUnitType>Inch</rd:ReportUnitType>
+  <DataSets>
+    <DataSet Name="DataSet_Result">
+      <Fields>
+        <Field Name="TimeSheetNo_TimeSheetDetail">
+          <DataField>TimeSheetNo_TimeSheetDetail</DataField>
+        </Field>
+        <Field Name="TimeSheetLineNo_TimeSheetDetail">
+          <DataField>TimeSheetLineNo_TimeSheetDetail</DataField>
+        </Field>
+        <Field Name="Date_TimeSheetDetail">
+          <DataField>Date_TimeSheetDetail</DataField>
+        </Field>
+        <Field Name="Type_TimeSheetDetail">
+          <DataField>Type_TimeSheetDetail</DataField>
+        </Field>
+        <Field Name="ResourceNo_TimeSheetDetail">
+          <DataField>ResourceNo_TimeSheetDetail</DataField>
+        </Field>
+        <Field Name="JobNo_TimeSheetDetail">
+          <DataField>JobNo_TimeSheetDetail</DataField>
+        </Field>
+        <Field Name="JobTaskNo_TimeSheetDetail">
+          <DataField>JobTaskNo_TimeSheetDetail</DataField>
+        </Field>
+        <Field Name="CauseofAbsenceCode_TimeSheetDetail">
+          <DataField>CauseofAbsenceCode_TimeSheetDetail</DataField>
+        </Field>
+        <Field Name="ServiceOrderNo_TimeSheetDetail">
+          <DataField>ServiceOrderNo_TimeSheetDetail</DataField>
+        </Field>
+        <Field Name="ServiceOrderLineNo_TimeSheetDetail">
+          <DataField>ServiceOrderLineNo_TimeSheetDetail</DataField>
+        </Field>
+        <Field Name="Quantity_TimeSheetDetail">
+          <DataField>Quantity_TimeSheetDetail</DataField>
+        </Field>
+        <Field Name="Quantity_TimeSheetDetailFormat">
+          <DataField>Quantity_TimeSheetDetailFormat</DataField>
+        </Field>
+        <Field Name="PostedQuantity_TimeSheetDetail">
+          <DataField>PostedQuantity_TimeSheetDetail</DataField>
+        </Field>
+        <Field Name="PostedQuantity_TimeSheetDetailFormat">
+          <DataField>PostedQuantity_TimeSheetDetailFormat</DataField>
+        </Field>
+        <Field Name="AssemblyOrderNo_TimeSheetDetail">
+          <DataField>AssemblyOrderNo_TimeSheetDetail</DataField>
+        </Field>
+        <Field Name="AssemblyOrderLineNo_TimeSheetDetail">
+          <DataField>AssemblyOrderLineNo_TimeSheetDetail</DataField>
+        </Field>
+        <Field Name="Status_TimeSheetDetail">
+          <DataField>Status_TimeSheetDetail</DataField>
+        </Field>
+        <Field Name="Posted_TimeSheetDetail">
+          <DataField>Posted_TimeSheetDetail</DataField>
+        </Field>
+        <Field Name="Chargeable_TimeSheetDetail">
+          <DataField>Chargeable_TimeSheetDetail</DataField>
+        </Field>
+        <Field Name="JobSubTaskNo_TimeSheetDetail">
+          <DataField>JobSubTaskNo_TimeSheetDetail</DataField>
+        </Field>
+        <Field Name="JobDescription_TimeSheetDetail">
+          <DataField>JobDescription_TimeSheetDetail</DataField>
+        </Field>
+        <Field Name="JobTaskDescription_TimeSheetDetail">
+          <DataField>JobTaskDescription_TimeSheetDetail</DataField>
+        </Field>
+        <Field Name="TimeSheetDescription_TimeSheetDetail">
+          <DataField>TimeSheetDescription_TimeSheetDetail</DataField>
+        </Field>
+        <Field Name="WorkTypeCode_TimeSheetDetail">
+          <DataField>WorkTypeCode_TimeSheetDetail</DataField>
+        </Field>
+      </Fields>
+      <Query>
+        <DataSourceName>DataSource</DataSourceName>
+        <CommandText />
+      </Query>
+    </DataSet>
+  </DataSets>
+</Report>

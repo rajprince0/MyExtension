@@ -1,0 +1,26 @@
+{
+  "id": "c1e6cbd9-67d1-41ec-ad9b-2a836b1cd28a",
+  "name": "Everest Extension",
+  "publisher": "Everest Upgrade",
+  "brief": "",
+  "description": "",
+  "version": "1.0.0.2",
+  "privacyStatement": "",
+  "EULA": "",
+  "help": "",
+  "url": "",
+  "logo": "",
+  "capabilities": [],
+  "dependencies": [],
+  "features": [ "TranslationFile" ],
+  "screenshots": [],
+  "platform": "13.0.0.0",
+  "application": "13.0.0.0",
+  "showMyCode": true,
+  "target": "Internal",
+  "idRange": {
+    "from": 50000,
+    "to": 99999
+  },
+  "runtime": "2.2"
+}
