@@ -6,9 +6,10 @@
             "request": "launch",
             "name": "Your own server",
             "server": "http://localhost",
-            "serverInstance": "BC130",
-            "authentication": "UserPassword",
+            "serverInstance": "EVBCTEST",
+            "authentication": "Windows",
             "startupObjectId": 22,
+            "port": 7149,
             "startupObjectType": "Page",
             "breakOnError": true
         }
