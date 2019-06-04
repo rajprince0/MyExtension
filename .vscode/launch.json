@@ -9,7 +9,7 @@
             "serverInstance": "EV_BC_TEST",
             "authentication": "Windows",
             "breakOnError": true,
-            "port": 7148,
+            "port": 7149,
             "schemaUpdateMode": "Synchronize"
         }
     ]
