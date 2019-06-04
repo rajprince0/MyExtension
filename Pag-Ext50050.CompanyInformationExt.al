@@ -7,7 +7,6 @@ pageextension 50050 "CompanyInformationExt" extends "Company Information"
             field("Subsidiary Company Name"; "Subsidiary Company Name")
             {
                 ApplicationArea = All;
-                Caption ='Subsidiary Company Name';
             }
         }
     }
