@@ -4,7 +4,7 @@ dotnet
     {
         type("Microsoft.Dynamics.Nav.Client.BusinessChart.BusinessChartAddIn"; "Microsoft.Dynamics.Nav.Client.BusinessChart")
         {
-            IsControlAddIn = true;
+
         }
 
     }
